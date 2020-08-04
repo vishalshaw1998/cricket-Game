@@ -418,6 +418,7 @@ hitByTeamTwo.addEventListener("click", () => {
         currentBall == 1 &&
         currentTeam == "team2"
     ) {
+        changePlayer = false;
         timer2 = setInterval(function () {
             timerTwo = timerTwo - 1;
             document.getElementsByClassName(

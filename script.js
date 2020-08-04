@@ -1,4 +1,3 @@
-"use strict";
 var teamOnePlayerScore = {
     player1: [null, null, null, null, null, null, { total: 0 }],
     player2: [null, null, null, null, null, null, { total: 0 }],
@@ -9,7 +8,7 @@ var teamOnePlayerScore = {
     player7: [null, null, null, null, null, null, { total: 0 }],
     player8: [null, null, null, null, null, null, { total: 0 }],
     player9: [null, null, null, null, null, null, { total: 0 }],
-    player10: [null, null, null, null, null, null, { total: 0 }],
+    player10: [null, null, null, null, null, null, { total: 0 }]
 };
 var teamTwoPlayerScore = {
     player1: [null, null, null, null, null, null, { total: 0 }],
@@ -21,7 +20,7 @@ var teamTwoPlayerScore = {
     player7: [null, null, null, null, null, null, { total: 0 }],
     player8: [null, null, null, null, null, null, { total: 0 }],
     player9: [null, null, null, null, null, null, { total: 0 }],
-    player10: [null, null, null, null, null, null, { total: 0 }],
+    player10: [null, null, null, null, null, null, { total: 0 }]
 };
 var timerOne = 60;
 var timerTwo = 60;
@@ -330,6 +329,7 @@ hitByTeamTwo.addEventListener("click", function () {
     if (currentPlayer == "player1" &&
         currentBall == 1 &&
         currentTeam == "team2") {
+        changePlayer = false;
         timer2 = setInterval(function () {
             timerTwo = timerTwo - 1;
             document.getElementsByClassName("timer")[0].innerHTML = "" + timerTwo;
